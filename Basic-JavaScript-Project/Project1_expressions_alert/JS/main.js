@@ -12,3 +12,7 @@ document.write("<h3>The children are: "+firstDaughter+" and "+secondDaughter+"<h
 var e = 2;
 var f = e +3;
 document.write(f); 
+ 
+function pushMe(obg){
+    obg.innerHTML="MY"+"trying";
+}
