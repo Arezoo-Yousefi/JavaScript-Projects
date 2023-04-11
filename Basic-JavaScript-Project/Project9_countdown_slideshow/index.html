@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project9_countdown_slideshow</title>
+        <link href="./CSS/file.css" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--slide show-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">slide 1/3</div>
+                <img src="./images/StockSnap_2NYCAXVIYK.jpg" alt="breakfast" style="width: 100%;">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">slide 2/3</div>
+                <img src="./images/StockSnap_GI8MR5LOLC.jpg"alt="breakfast" style="width: 100%;">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">slide 3/3</div>
+                <img src="./images/StockSnap_VD2NUQHVJS.jpg" alt="breakfast" style="width: 100%;">
+                <div class="text">Caption Text</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!--end of slide show-->
+        <label for="alarm">How many seconds would you like to set</label>
+        <input name="alarm" value="" id="seconds"/>
+        <button onclick="countdown()">Enter</button>
+        <p id="timer"></p>
+        <script src="JS/main.js"></script>
+    </body>
+</html>
