@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project10_loops_arrays</title>
+        <meta charset="UTF-8">
+        <meta name="viwport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/main.js" defer></script>
+    </head>
+    <body>
+        <p id="man" onmouseover="man()">&nbsp;&nbsp;&nbsp;</p>
+        <div style="width: 50%; float:left">
+        <p id="loop"></p>
+        <button onclick="call_loop()">press to start</button>
+        </div>
+        <div style="width: 50%; float:left">
+        <input id="length" value="type a word">
+        <button onclick="countLength()">push to count the length</button>
+        <p id="here"></p>
+        </div>
+        <div width="50%">
+            <label for="student">type the name of your classmates:</label>
+            <input type="text" id="classMates" name="student" size="20">
+            <button onclick="countThem()">push to add</button>
+            <button onclick="counting()">finish</button>
+            <p id="now"></p>
+            <p id="complete"></p>
+        </div>
+        <div>
+            <p id="constant"></p>
+            <button onclick="constantFunction()">press</button>
+            <input type="text" id="yourSchool" value="your school name">
+        </div>
+        <div>
+            <p id="objectN" onmouseover="objectHa()">&nbsp;</p>
+        </div>
+        <div>
+            <label for="typing">Start typing</label>
+            <input onkeypress="typing(event,this)" name="typing" id="mains">
+            <input onkeypress="typing(event,this)" name="typing" id="id3">
+            <p id="typing"></p>
+        </div>
+        
+    </body>
+</html>
